@@ -317,7 +317,7 @@ func main() {
 		case "xor":
 			block, _ = kcp.NewSimpleXORBlockCrypt(pass)
 		case "none":
-			block, _ = kcp.NewNoneBlockCrypt(pass)
+			block = nil
 		case "aes-128":
 			block, _ = kcp.NewAESBlockCrypt(pass[:16])
 		case "aes-192":
